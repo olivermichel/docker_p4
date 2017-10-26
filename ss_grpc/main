@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+echo "starting interative shell in ss_grpc -- terminate with ^D"
+docker run --cidfile ss_grpc.cid --interactive --tty --workdir "/root/src" --volume $PWD:/root/src ss_grpc /bin/sh
+
+
+# docker run --interactive --tty --workdir "/root" ss_grpc /root/opt/bm/targets/simple_switch_grpc/simple_switch_grpc $*
+
+# -v $PWD:/root

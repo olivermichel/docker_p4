@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+docker exec $(cat ss_grpc.cid) /root/opt/bm/targets/simple_switch_grpc/simple_switch_grpc $*
