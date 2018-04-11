@@ -17,7 +17,6 @@ RUN git checkout tags/v$PROTOBUF_VERSION && \
   ./autogen.sh && ./configure && \
   make && make install && ldconfig
 
-
 WORKDIR /root/opt
 RUN git clone https://github.com/google/grpc.git
 
