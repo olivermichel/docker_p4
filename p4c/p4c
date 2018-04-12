@@ -5,4 +5,4 @@ if [[ "$(docker images -q p4c:latest 2> /dev/null)" == "" ]]; then
   exit 1
 fi
 
-docker run  --workdir /p4c --volume $PWD:/p4c p4c p4c $*
+docker run  --workdir /p4c --rm --volume $PWD:/p4c p4c p4c $*
